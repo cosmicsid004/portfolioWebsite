@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddharth - Developer</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header class="header">
+        <span class="logo">COSMIC <strong>SID</strong></span>
+        <nav>
+            <a href="#about"> About </a>
+            <a href="#devlogs"> Dev logs </a>
+            <a href="#contact"> Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero fade">
+        <h1>
+            I'm Siddharth - an Developer focused on
+            <span> Flutter, Raspberry Pi, IoT powered apps </span>
+        </h1>
+
+    </section>
+
+    <section id="about" class="about">
+        <p class="fade delay-1">
+            I try to turn ideas into working products through continuous learning and hands-on
+            implementation.
+        </p>
+
+        <p class="fade delay-2">
+            I work on Flutter, Python, and embedded systems, building
+            solutions designed for real-world use not, just demos.
+        </p>
+    </section>
+
+
+    <section id="devlogs" class="devlogs reveal">
+        <h1>Dev Logs</h1>
+
+        <div class="log fade delay-1">
+            <h3>Building My First Flutter + IoT App</h3>
+            <p>
+                Built a Flutter app connected to a Node MCU to display real-time sensor data.
+                Learned async data handling.
+            </p>
+            <span class="tech">Flutter · Python · Node MCU</span>
+        </div>
+
+        <div class="log fade delay-2">
+            <h3>Working with Raspberry Pi GPIO</h3>
+            <p>
+                Experimented with GPIO pins and sensors, focusing on safe hardware interaction
+                and clean Python scripting.
+            </p>
+            <span class="tech">Python · GPIO · Embedded Systems</span>
+        </div>
+
+        <div class="log fade delay-3">
+            <h3>Learning Status</h3>
+            <p>
+                Currently expanding my skill set by learning iOS development and native app architecture.
+            </p>
+            <span class="tech">Swift · SwiftUI · Playground</span>
+        </div>
+
+    </section>
+
+
+    <section id="contact" class="contact fade delay-2">
+        <h1>
+            Contact
+        </h1>
+        <p>
+            Let's build some impactful solutions together.
+        </p>
+        <div class="contact-links">
+            <a href="mailto:siddharthdream2004@gmail.com"> Email </a>
+            <a href="https://github.com/cosmicsid004"> GitHub </a>
+            <a href="https://www.linkedin.com/in/siddharth-b7161a27a/"> LinkedIn </a>
+            <a href="assets/resume.pdf">Resume</a>
+        </div>
+    </section>
+
+
+    <script>
+        const reveals = document.querySelectorAll(".reveal");
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("active");
+                    }
+                });
+            },
+            {
+                threshold: 0.1
+            }
+        );
+
+        reveals.forEach(reveal => {
+            observer.observe(reveal);
+        });
+    </script>
+
+
+</body>
+
+</html>
