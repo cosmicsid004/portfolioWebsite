@@ -5,112 +5,226 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Siddharth - Developer</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta name="description"
+        content="Siddharth (Cosmic Sid) - Developer building thoughtful apps and systems. Creator of Logic Hoot and CosmicLang.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
     <header class="header">
-        <span class="logo">COSMIC <strong>SID</strong></span>
-        <nav>
-            <a href="#about"> About </a>
-            <a href="#devlogs"> Dev logs </a>
-            <a href="#contact"> Contact</a>
+        <a href="#top" class="logo">Cosmic<strong>Sid</strong></a>
+        <nav class="nav">
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#devlogs">Dev Logs</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <section class="hero fade">
-        <h1>
-            I'm Siddharth - an Developer focused on
-            <span> Flutter, Raspberry Pi, IoT powered apps and Swift </span>
-        </h1>
+    <main id="top">
 
-    </section>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-inner">
+                <p class="hero-eyebrow reveal">Developer · Builder</p>
+                <h1 class="hero-name reveal">Siddharth</h1>
+                <p class="hero-sub reveal">
+                    I design and build software that people actually use -
+                    from iPad apps to a compiler written in Rust.
+                </p>
+                <div class="hero-actions reveal">
+                    <a href="#work" class="btn btn-primary">View Work</a>
+                    <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+                </div>
+            </div>
+        </section>
 
-    <section id="about" class="about">
-        <p class="fade delay-1">
-            I try to turn ideas into working products through continuous learning and hands-on
-            implementation.
-        </p>
-
-        <p class="fade delay-2">
-            I work on Flutter, Python, Swift, and embedded systems, building
-            solutions designed for real-world use not, just demos.
-        </p>
-    </section>
-
-
-    <section id="devlogs" class="devlogs reveal">
-        <h1>Dev Logs</h1>
-
-        <div class="log fade delay-1">
-            <h3>Building My First Flutter + IoT App</h3>
-            <p>
-                Built a Flutter app connected to a Node MCU to display real-time sensor data.
-                Learned async data handling.
+        <!-- About -->
+        <section id="about" class="section about">
+            <p class="section-label reveal">About</p>
+            <h2 class="about-lead reveal">
+                I turn ideas into working products through continuous learning
+                and hands-on implementation.
+            </h2>
+            <p class="about-body reveal">
+                I work across Swift &amp; SwiftUI, Flutter, Python, Rust, and embedded
+                systems - building solutions designed for real-world use, not just demos.
+                Whether it&rsquo;s an educational app on the App Store or a language
+                compiler, I care about clarity, correctness, and craft.
             </p>
-            <span class="tech">Flutter · Python · Node MCU</span>
-        </div>
+        </section>
 
-        <div class="log fade delay-2">
-            <h3>Working with Raspberry Pi GPIO</h3>
-            <p>
-                Experimented with GPIO pins and sensors, focusing on safe hardware interaction
-                and clean Python scripting.
-            </p>
-            <span class="tech">Python · GPIO · Embedded Systems</span>
-        </div>
+        <!-- Work / Projects -->
+        <section id="work" class="section work">
+            <p class="section-label reveal">Selected Work</p>
+            <h2 class="section-title reveal">Two things I&rsquo;m proud of.</h2>
 
-        <div class="log fade delay-3">
-            <h3>Learning Status</h3>
-            <p>
-                Currently expanding my skill set by learning iOS development and native app architecture.
-            </p>
-            <span class="tech">Swift · SwiftUI · Playground</span>
-        </div>
+            <div class="projects">
 
-    </section>
+                <!-- Logic Hoot -->
+                <article class="project reveal">
+                    <div class="project-media project-media--app">
+                        <div class="app-badge">
+                            <span class="app-icon" aria-hidden="true">
+  <img src="assets/logichootlogo.png" alt="LogicHoot Logo" class="app-logo">
+</span>
+                        </div>
+                        <span class="project-status project-status--live">Live on the App Store</span>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-head">
+                            <h3 class="project-title">Logic Hoot</h3>
+                            <span class="project-kind">iPad App · Education</span>
+                        </div>
+                        <p class="project-desc">
+                            A thoughtfully crafted environment where digital logic becomes
+                            something you can explore, build, and truly understand. Interactive
+                            learning cards, real-time circuit simulations, a freeform playground,
+                            and Apple Intelligence–powered explanations.
+                        </p>
+                        <ul class="project-features">
+                            <li>Learning cards for gates, adders &amp; latches</li>
+                            <li>Live circuit simulation with smart wiring assistance</li>
+                            <li>Playground mode for building custom circuits</li>
+                            <li>Apple Intelligence conversational support</li>
+                        </ul>
+                        <ul class="tags">
+                            <li>Swift</li>
+                            <li>SwiftUI</li>
+                            <li>Apple Intelligence</li>
+                            <li>iPadOS</li>
+                        </ul>
+                        <div class="project-links">
+                            <a class="btn btn-primary btn-sm"
+                                href="https://apps.apple.com/in/app/logic-hoot/id6761355765"
+                                target="_blank" rel="noopener">
+                                View on App Store
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
+                <!-- CosmicLang -->
+                <article class="project reveal">
+                    <div class="project-media project-media--code">
+                        <pre class="code-snippet" aria-hidden="true"><span class="c-cmt">// CosmicLang</span>
+<span class="c-kw">let</span> x = <span class="c-num">12</span>
+<span class="c-kw">let</span> y = x > <span class="c-num">10</span> ? <span class="c-str">"big"</span> : <span class="c-str">"small"</span>
+<span class="c-fn">publish</span>(y)</pre>
+                        <span class="project-status project-status--dev">v2.0 · In Development</span>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-head">
+                            <h3 class="project-title">CosmicLang</h3>
+                            <span class="project-kind">Compiler · Rust</span>
+                        </div>
+                        <p class="project-desc">
+                            A programming language and compiler built for constrained,
+                            latency-sensitive edge environments. A complete pipeline -
+                            lexer, parser, and evaluator - with a REPL and multi-line
+                            <code>.cosmic</code> file support, written entirely in Rust
+                            with zero external dependencies.
+                        </p>
+                        <ul class="project-features">
+                            <li>Full lexer → parser → evaluator pipeline</li>
+                            <li>Math with correct operator precedence</li>
+                            <li>Variables, strings &amp; ternary conditionals</li>
+                            <li>Interactive REPL &amp; file compilation</li>
+                        </ul>
+                        <ul class="tags">
+                            <li>Rust</li>
+                            <li>Compilers</li>
+                            <li>Zero-dependency</li>
+                            <li>REPL</li>
+                        </ul>
+                        <div class="project-links">
+                            <a class="btn btn-primary btn-sm"
+                                href="https://github.com/cosmicsid004/CosmicLang"
+                                target="_blank" rel="noopener">
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
-    <section id="contact" class="contact fade delay-2">
-        <h1>
-            Contact
-        </h1>
-        <p>
-            Let's build some impactful solutions together.
-        </p>
-        <div class="contact-links">
-            <a href="mailto:siddharthdream2004@gmail.com"> Email </a>
-            <a href="https://github.com/cosmicsid004"> GitHub </a>
-            <a href="https://www.linkedin.com/in/siddharth-b7161a27a/"> LinkedIn </a>
-            <a href="assets/resume.pdf">Resume</a>
-        </div>
-    </section>
+            </div>
+        </section>
 
+        <!-- Dev Logs -->
+        <section id="devlogs" class="section devlogs">
+            <p class="section-label reveal">Dev Logs</p>
+            <h2 class="section-title reveal">Notes from the workbench.</h2>
+
+            <div class="logs">
+                <article class="log reveal">
+                    <h3>Building My First Flutter + IoT App</h3>
+                    <p>
+                        Built a Flutter app connected to a NodeMCU to display real-time
+                        sensor data. Learned async data handling and clean state management.
+                    </p>
+                    <span class="tech">Flutter · Python · NodeMCU</span>
+                </article>
+
+                <article class="log reveal">
+                    <h3>Working with Raspberry Pi GPIO</h3>
+                    <p>
+                        Experimented with GPIO pins and sensors, focusing on safe hardware
+                        interaction and clean, readable Python scripting.
+                    </p>
+                    <span class="tech">Python · GPIO · Embedded</span>
+                </article>
+
+                <article class="log reveal">
+                    <h3>Writing a Compiler in Rust</h3>
+                    <p>
+                        Designed CosmicLang from scratch - tokenizing, parsing to an AST,
+                        and evaluating expressions with correct precedence, all in Rust.
+                    </p>
+                    <span class="tech">Rust · Compilers · AST</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section contact">
+            <p class="section-label reveal">Contact</p>
+            <h2 class="contact-title reveal">Let&rsquo;s build something impactful together.</h2>
+            <div class="contact-links reveal">
+                <a href="mailto:siddharthdream2004@gmail.com">Email</a>
+                <a href="https://github.com/cosmicsid004" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/in/siddharth-b7161a27a/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <span>© 2026 Siddharth - Cosmic Sid</span>
+        <a href="#top">Back to top ↑</a>
+    </footer>
 
     <script>
-        const reveals = document.querySelectorAll(".reveal");
-
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add("active");
+                        observer.unobserve(entry.target);
                     }
                 });
             },
-            {
-                threshold: 0.1
-            }
+            { threshold: 0.15, rootMargin: "0px 0px -40px 0px" }
         );
 
-        reveals.forEach(reveal => {
-            observer.observe(reveal);
-        });
+        document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
     </script>
-
 
 </body>
 
