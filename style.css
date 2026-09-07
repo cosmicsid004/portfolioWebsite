@@ -273,6 +273,7 @@ a {
 
 .project-media--code {
     background: #060606;
+    padding: 28px;
 }
 
 .app-badge {
@@ -292,23 +293,15 @@ a {
     line-height: 1;
 }
 
-.code-snippet {
-    font-family: "SF Mono", "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
-    font-size: 14px;
-    line-height: 1.7;
-    color: #e5e5e5;
-    text-align: left;
+/* CosmicLang code sample image */
+.code-image {
     width: 100%;
     max-width: 320px;
-    white-space: pre;
-    overflow-x: auto;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
-
-.code-snippet .c-cmt { color: #5a5a5a; }
-.code-snippet .c-kw  { color: #d1d1d1; font-weight: 400; }
-.code-snippet .c-num { color: #9a9a9a; }
-.code-snippet .c-str { color: #b8b8b8; }
-.code-snippet .c-fn  { color: #ffffff; }
 
 .project-status {
     position: absolute;
